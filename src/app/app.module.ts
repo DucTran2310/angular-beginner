@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentOverviewComponent } from './component-overview/component-overview.component';
 import { FormsModule } from '@angular/forms';
+import { MessagesComponent } from './message/message.component';
 
 @NgModule({
   declarations: [
@@ -14,9 +15,9 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     ComponentOverviewComponent,
+    MessagesComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [NO_ERRORS_SCHEMA], // Bỏ qua lỗi liên quan đến schema
 })
 export class AppModule {}

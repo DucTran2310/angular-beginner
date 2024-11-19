@@ -1,6 +1,7 @@
 import { NgIf, UpperCasePipe } from '@angular/common';
 import {Hero} from '../hero';
 import {Component, Input} from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   standalone: true,
@@ -9,7 +10,8 @@ import {Component, Input} from '@angular/core';
   styleUrl: './hero-detail.component.css',
   imports: [
     NgIf,
-    UpperCasePipe
+    UpperCasePipe,
+    FormsModule
   ]
 })
 export class HeroDetailComponent {
